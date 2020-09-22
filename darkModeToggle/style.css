@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+  padding: 5rem;
+  text-align: center;
+  margin: 0;
+  transition: background 0.3s linear, color 0.3s linear;
+}
+
+.dark {
+  background-color: #383737;
+  color: white;
+}
+
+.toggle-container {
+  position: fixed;
+  top: 10px;
+  right: 10px;
+}
+
+label {
+    display: inline-block;
+    background-color: rebeccapurple;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+  user-select: none;
+  transition: background 0.3s linear;
+}
+
+body.dark label {
+    background-color: #fff;
+}
+
+input {
+    visibility: hidden;
+}
